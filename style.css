@@ -67,7 +67,7 @@ div#nav-links {
 }
 
 @media screen and (max-width: 750px) {
-  #nav-links a {
+  header #nav-links a {
     display: none;
   }
 }
@@ -113,11 +113,35 @@ div#nav-links {
 @media screen and (max-width: 930px) {
   #home {
     flex-direction: column;
+    width: 100%;
+    height: fit-content;
   }
 
   #home div {
-    width: 100%;
     height: fit-content;
+    width: 100%;
+  }
+
+  #main-right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #home div h2 {
+    font-size: 2rem;
+  }
+
+  #title {
+    padding: 0 0 2% 0;
+  }
+
+  #title1 {
+    padding: 2% 0 2% 0;
+  }
+  .picture {
+    height: fit-content;
+    width: 100%;
   }
 }
 /* INFO ON ME //////////////////////////////// */
@@ -268,6 +292,14 @@ footer {
 
 @media screen and (max-width: 500px) {
   footer {
+    width: 90%;
     font-size: 1rem;
+    margin: 0;
   }
+
+  /* footer h2,
+  footer h3 {
+    width: 100%;
+    margin: 0;
+  } */
 }
