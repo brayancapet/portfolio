@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+/* CSS THAT OVERWRITE EVERYTHING */
+* {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #25242a;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* HEADER ////////////////////////// */
+/* NAV BAR CONTAINER */
+header {
+  background-color: #00c897;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LINKS IN NAV BAR */
+div.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+/* STYLE OF MY LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+.nav-links a:hover {
+  color: #f2f2f2;
+  transition: all 0.5s ease;
+}
+/* BUTTON BURGER FOR MOBILE MENU */
+.fa-burger {
+  display: none;
+}
+
+/* LOGO ICON */
+.fa-code {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #25242a;
+}
+.fa-code:hover {
+  color: #f2f2f2;
+  transition: all 0.5s ease;
+}
+
+/* MAIN PAGE //////////////// */
+/* HOME PAGE */
+#home {
+  background-color: #25242a;
+  color: #f2f2f2;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  border-bottom: 2px solid #00c897;
+}
+.picture {
+  height: 100%;
+  width: 50%;
+}
+.picture img {
+  height: 100%;
+  width: 100%;
+}
+#main-right {
+  height: 100%;
+  width: 50%;
+  padding: 5% 0 0 5%;
+}
+
+#home div h1 {
+  font-size: 6rem;
+}
+#home div h2 {
+  font-size: 4rem;
+}
+#devSpan:hover {
+  color: #00c897;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#brayanSpan {
+  color: #00c897;
+}
+
+/* INFO ON ME //////////////////////////////// */
+/* INFO ON ME CONTAINER */
+#brayan {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+/* BOTH DIV IN MY BRAYAN DIV */
+#brayan div {
+  width: 50%;
+  height: 100%;
+  color: #f2f2f2;
+  font-size: 2rem;
+  background-color: #25242a;
+  padding: 5% 0 0 5%;
+}
+
+#brayan img {
+  margin-top: 13.5%;
+  border-bottom: 2px solid #00c897;
+}
+
+#brayan h2 {
+  color: #00c897;
+}
+
+/* EXPERIENCES SECTION */
+/* MY EXPERIENCES */
+.experience {
+  height: fit-content;
+  color: #f2f2f2;
+  font-size: 2rem;
+  background-color: #25242a;
+  padding: 5% 0 5% 5%;
+}
+.experience li {
+  list-style: none;
+}
+
+.experience h2 {
+  color: #00c897;
+}
+
+/* PROJECTS SECTION  */
+/* MY PROJECTS */
+
+#presentation {
+  width: 100%;
+  height: fit-content;
+  color: white;
+}
+
+#presentation h2 {
+  font-size: 2rem;
+  color: #00c897;
+}
+
+#presentation p {
+  font-size: 1.5rem;
+}
+
+#projects {
+  background-color: #007a8b;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#newProject {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+#newProject div {
+  width: 30%;
+  height: fit-content;
+  margin: 2.5%;
+  background-color: white;
+}
+
+#newProject div img {
+  width: 90%;
+  height: 60%;
+  margin: 5% 5% 5% 5%;
+}
+
+#newProject h2 {
+  margin: 0 5% 0 5%;
+}
+
+#newProject p {
+  padding: 0 5% 0 5%;
+}
+
+/* FOOTER SECTION */
+/* CONTACT SECTION */
+footer {
+  background-color: #25242a;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  padding: 2%;
+}
