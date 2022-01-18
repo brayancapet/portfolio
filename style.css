@@ -133,11 +133,11 @@ div#nav-links {
   }
 
   #title {
-    padding: 0 0 2% 0;
+    padding: 0 0 2% 3%;
   }
 
   #title1 {
-    padding: 2% 0 2% 0;
+    padding: 2% 0 2% 3%;
   }
   .picture {
     height: fit-content;
@@ -210,6 +210,16 @@ div#nav-links {
   color: #00c897;
 }
 
+@media screen and (max-width: 700px) {
+  .experience h2 {
+    font-size: 1.5rem;
+  }
+
+  .experience li {
+    font-size: 1.5rem;
+  }
+}
+
 /* PROJECTS SECTION  */
 /* MY PROJECTS */
 
@@ -274,6 +284,16 @@ div#nav-links {
     width: 90%;
     margin: 5%;
   }
+
+  #presentation h2 {
+    font-size: 1.5rem;
+    margin-left: 2%;
+  }
+
+  #presentation p {
+    margin-left: 2%;
+    margin-top: 1%;
+  }
 }
 
 /* FOOTER SECTION */
@@ -296,10 +316,4 @@ footer {
     font-size: 1rem;
     margin: 0;
   }
-
-  /* footer h2,
-  footer h3 {
-    width: 100%;
-    margin: 0;
-  } */
 }
