@@ -76,6 +76,7 @@ header div {
   height: fit-content;
   background-color: #d45b63;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .plats div {
@@ -125,6 +126,7 @@ header div {
   height: fit-content;
   background-color: #b7547d;
   display: flex;
+  justify-content: center;
 }
 
 .frites div {
@@ -173,6 +175,7 @@ header div {
   height: fit-content;
   background-color: #8d5689;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .boissons div {
