@@ -31,7 +31,7 @@ function show_characters(data) {
           <p class="card-text">${species} - ${origin.name}</p>
           <p class="card-text newcard">${status}</p>
           <h5>Gender :</h5>
-          <p class="card-text">${gender}</p>
+          <p class="card-text" style="color: green;">${gender}</p>
         </div>
     </div>
     `;
@@ -40,12 +40,4 @@ function show_characters(data) {
   });
 }
 
-function getColor() {
-  let newcard = document.querySelector(".newcard");
-  if (newcard.textContent == "Alive") {
-    newcard.classList.add("green");
-  } else if (newcard.textContent == "Dead") {
-    newcard.classList.add("red");
-  }
-}
 button.addEventListener("click", get_characters);
