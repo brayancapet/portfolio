@@ -4,144 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
     <link rel="stylesheet" href="./style.css" />
     <title>Brayan Capet</title>
   </head>
   <body>
-    <header>
-      <a href="#home"><i class="fa-solid fa-code"></i></a>
-
-      <div id="nav-links">
-        <a href="#projects">Projets</a>
-        <a href="#brayan">En savoir plus</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="javascript:void(0);"><i class="fa-solid fa-burger"></i></a>
-    </header>
-
-    <div id="home">
-      <div id="main-right">
-        <h2 id="title1">BRAYAN CAPET</h2>
-        <h2 id="title">
-          <span id="devSpan">Développeur</span>
-          <span id="brayanSpan">Front-end</span>
-        </h2>
-      </div>
-      <div class="picture">
-        <img src="brayan.jpg" alt="ma photo" />
-      </div>
+    <!-- Première page avec mon effet auto-type -->
+    <div class="hello">
+      <h1>Bonjour, je suis <span class="auto-type"></span></h1>
     </div>
 
-    <div id="brayan">
-      <div>
-        <h2>Qui je suis ?</h2>
+    <div class="container">
+      <section class="presentation">
+        <h2>Présentation</h2>
+      </section>
+
+      <section class="competences">
+        <h2>Compétences</h2>
+      </section>
+
+      <section class="projets">
+        <h2>Projets</h2>
+      </section>
+
+      <section class="contact">
+        <h2>Restons en contact</h2>
         <p>
-          Développeur web actuellement en formation au sein d'intech, passionné
-          par la technologie, la musique et le sport. Je suis basé en Aquitaine
-          et suis ouvert à toute proposition concernant un emploi à ce poste.
-          Autonome, curieux et sociable, je m'intègre rapidement à un nouveau
-          groupe et j'apprécie travailler en collaboration.
+          Je reste disponible pour toute information complémentaire ou pour
+          toute demande de rendez-vous.
         </p>
-      </div>
-
-      <div id="right-img">
-        <img src="zoro2-removebg-preview.png" alt="zoro" />
-      </div>
+        <ul>
+          <li>Mail</li>
+          <li>Linkedin</li>
+          <li>GitHub</li>
+        </ul>
+      </section>
     </div>
 
-    <div class="experience">
-      <h2>Mes Expériences :</h2>
-
-      <ul>
-        <li>Stage avec un développeur web freelance à Anglet.</li>
-        <li>Formation Udemy sur JavaScript.</li>
-        <li>
-          Formation Développeur Web et Web Mobile à in'tech avec le groupe AEN.
-        </li>
-      </ul>
-    </div>
-
-    <div id="presentation">
-      <h2>Mes Projets :</h2>
-      <p>
-        Voici quelques projets que j'ai réalisé, en utilisant majoritairement
-        HTML, CSS et JavaScript.
-      </p>
-    </div>
-
-    <div id="projects">
-      <div id="newProject">
-        <div>
-          <a href="./rickApi.html" target="blank"
-            ><img src="rickLogo.jpg" alt="rick and morty project"
-          /></a>
-          <h2>Rickédex</h2>
-          <p>
-            Trouvez des informations sur votre personnage favori de l'univers
-            Rick et Morty, grâce à un api de plus de 800 personnages.
-          </p>
-        </div>
-        <div>
-          <a href="./starWars.html" target="blank"
-            ><img src="starWars.png" alt="star wars website project"
-          /></a>
-          <h2>Star Wars Project</h2>
-          <p>
-            Site star wars pour pratiquer le responsive design, la nav bar et le
-            positionnement d'éléments.
-          </p>
-        </div>
-        <div>
-          <a href="./mélo.html" target="blank"
-            ><img src="mélo.png" alt="Site vitrine Mélo"
-          /></a>
-          <h2>Site vitrine Food truck</h2>
-          <p>Site vitrine pour un food truck "Le truck de Chez Mélo".</p>
-        </div>
-      </div>
-
-      <div id="newProject">
-        <div>
-          <a href="./toDoList.html" target="blank"
-            ><img src="toDoList.png" alt="to do list project"
-          /></a>
-          <h2>To Do List</h2>
-          <p>
-            Manipulation du DOM JavaScript, avec la création d'une to do list.
-          </p>
-        </div>
-        <div>
-          <a href="./animeQuote.html" target="blank"
-            ><img src="./guts.jpg" alt="anime quote project"
-          /></a>
-          <h2>Citations anime</h2>
-          <p>
-            Lorsque l'utiisateur appuie sur le bouton, une nouvelle citation
-            aléatoire s'affichera, ainsi que le nom du personnage et l'anime
-            d'où provient la citation.
-          </p>
-        </div>
-        <div>
-          <a href="./responsive.html" target="blank"
-            ><img src="responsive.png" alt="Responsive website"
-          /></a>
-          <h2>Site web vitrine</h2>
-          <p>Site web vitrine pour un commerce fictif, responsif.</p>
-        </div>
-      </div>
-    </div>
-
-    <footer id="contact">
-      <h2>Me Contacter :</h2>
-      <h3>Par Email : Brayan.capet@outlook.fr</h3>
-      <h3>Sur GitHub : brayancapet</h3>
-      <h3>Sur LinkedIn : Brayan Capet</h3>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ////////////////////////////////// */
+/* NAVBAR SECTION */
+header {
+  width: 100%;
+  height: 16vh;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #f2f2f2;
+  display: flex;
+}
+
+header div {
+  height: 100%;
+}
+
+.logo {
+  width: 25%;
+  margin-right: 25%;
+}
+
+.logo img {
+  height: 110px;
+  width: 215px;
+}
+
+.navlinks {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+
+.navlinks a {
+  padding-left: 3%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #25242a;
+  display: flex;
+  align-items: center;
+}
+
+.navlinks a:hover {
+  color: #d45b63;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 540px) {
+  .navlinks {
+    display: none;
+  }
+}
+
+/* ///////////////////////////////////////////// */
+/* SECTION PLATS */
+.plats {
+  width: 100%;
+  height: fit-content;
+  background-color: #d45b63;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plats div {
+  width: 15%;
+  height: fit-content;
+  margin: 2%;
+  background-color: wheat;
+  padding: 0;
+}
+
+.plats div img {
+  width: 80%;
+  height: 55%;
+  margin: 10%;
+}
+
+.plats div p,
+.plats div ul {
+  margin: 10%;
+}
+
+.plats div h2 {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 875px) {
+  .plats {
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .plats div {
+    width: 80%;
+    height: fit-content;
+    margin: 0 10% 0 10%;
+  }
+
+  .plats div p {
+    padding-bottom: 5%;
+  }
+}
+/* ///////////////////////////////////////////// */
+/* FRITES SECTION */
+.frites {
+  width: 100%;
+  height: fit-content;
+  background-color: #b7547d;
+  display: flex;
+  justify-content: center;
+}
+
+.frites div {
+  width: 15%;
+  height: fit-content;
+  margin: 2%;
+  background-color: wheat;
+}
+
+.frites div img {
+  width: 80%;
+  height: 55%;
+  margin: 10%;
+}
+
+.frites div p,
+.frites div ul {
+  margin: 10%;
+}
+
+.frites div h2 {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 875px) {
+  .frites {
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .frites div {
+    width: 80%;
+    height: fit-content;
+    margin: 0 10% 0 10%;
+  }
+
+  .frites div p {
+    padding-bottom: 5%;
+  }
+}
+/* ///////////////////////////////////////////// */
+/* BOISSONS SECTION */
+.boissons {
+  width: 100%;
+  height: fit-content;
+  background-color: #8d5689;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boissons div {
+  width: 15%;
+  height: fit-content;
+  margin: 2%;
+  background-color: wheat;
+}
+
+.boissons div img {
+  width: 80%;
+  height: 55%;
+  margin: 10%;
+}
+
+.boissons div p,
+.boissons div ul {
+  margin-left: 10%;
+}
+
+.boissons div h2 {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 875px) {
+  .boissons {
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .boissons div {
+    width: 80%;
+    height: fit-content;
+    margin: 0 10% 0 10%;
+  }
+
+  .boissons div p {
+    padding-bottom: 5%;
+  }
+}
+/* //////////////////////////////////////////// */
+/* INFO SECTION */
+.info {
+  width: 100%;
+  height: 10vh;
+  background-color: #3e5172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 875px) {
+  .info {
+    font-size: 0.75rem;
+    padding-left: 2%;
+  }
+}

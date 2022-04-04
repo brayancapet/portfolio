@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.card-element {
+  width: 18rem;
+  height: fit-content;
+  padding: 2%;
+  margin: 2%;
+}
+
+.card-element button {
+  margin-top: 2%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-perso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+header {
+  height: 15vh;
+  background-color: #25242a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: contain;
+}
+
+.btn-danger {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 2%;
+}
