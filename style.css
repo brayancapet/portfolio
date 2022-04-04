@@ -1,319 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
-/* CSS THAT OVERWRITE EVERYTHING */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-/* BODY */
-body {
-  margin: 0;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+/* style pour ma page d'accueil avec une animation auto-type https://github.com/mattboldt/typed.js/ */
+.hello {
+  width: 100%;
+  height: 100vh;
   background-color: #25242a;
-  width: 100%;
-  height: 100%;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-/* HEADER ////////////////////////// */
-/* NAV BAR CONTAINER */
-header {
-  background-color: #00c897;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 10vh;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+.hello h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.auto-type {
+  color: #00c897;
 }
 
-/* LINKS IN NAV BAR */
-div#nav-links {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-}
-/* STYLE OF MY LINKS */
-#nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-}
-#nav-links a:hover {
-  color: #f2f2f2;
-  transition: all 0.5s ease;
-}
-/* BUTTON BURGER FOR MOBILE MENU */
-.fa-burger {
-  display: none;
+/* élément parent de mes sections */
+.container {
+  width: 100%;
 }
 
-/* LOGO ICON */
-.fa-code {
-  font-size: 2rem;
-  margin-left: 2rem;
-  color: #25242a;
-}
-.fa-code:hover {
-  color: #f2f2f2;
-  transition: all 0.5s ease;
-}
-
-@media screen and (max-width: 750px) {
-  header #nav-links a {
-    display: none;
-  }
-}
-/* MAIN PAGE //////////////// */
-/* HOME PAGE */
-#home {
+/* sections contenant mes informations (presentation, competences, projets et contact) */
+section {
+  height: 100vh;
+  width: 100%;
   background-color: #25242a;
-  color: #f2f2f2;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  border-bottom: 2px solid #00c897;
-}
-.picture {
-  height: 100%;
-  width: 50%;
-}
-.picture img {
-  height: 100%;
-  width: 100%;
-}
-#main-right {
-  height: 100%;
-  width: 50%;
-  padding: 5% 0 0 5%;
-}
-
-#home div h1 {
-  font-size: 6rem;
-}
-#home div h2 {
-  font-size: 4rem;
-}
-#devSpan:hover {
-  color: #00c897;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-#brayanSpan {
-  color: #00c897;
-}
-
-@media screen and (max-width: 930px) {
-  #home {
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-  }
-
-  #home div {
-    height: fit-content;
-    width: 100%;
-  }
-
-  #main-right {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  #home div h2 {
-    font-size: 2rem;
-  }
-
-  #title {
-    padding: 0 0 2% 3%;
-  }
-
-  #title1 {
-    padding: 2% 0 2% 3%;
-  }
-  .picture {
-    height: fit-content;
-    width: 100%;
-  }
-}
-/* INFO ON ME //////////////////////////////// */
-/* INFO ON ME CONTAINER */
-#brayan {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-}
-/* BOTH DIV IN MY BRAYAN DIV */
-#brayan div {
-  width: 50%;
-  height: 100%;
-  color: #f2f2f2;
-  font-size: 2rem;
-  background-color: #25242a;
-  padding: 5% 0 0 5%;
-}
-
-#brayan img {
-  margin-top: 13.5%;
-  border-bottom: 2px solid #00c897;
-}
-
-#brayan h2 {
-  color: #00c897;
-}
-
-@media screen and (max-width: 950px) {
-  #brayan {
-    flex-direction: column;
-  }
-
-  #brayan div {
-    width: 100%;
-    height: fit-content;
-    padding: 0;
-    font-size: 1.5rem;
-  }
-
-  #brayan h2 {
-    padding-left: 2%;
-  }
-  #brayan p {
-    padding: 2%;
-  }
-  #brayan img {
-    margin: 0;
-    width: 100%;
-  }
-}
-/* EXPERIENCES SECTION */
-/* MY EXPERIENCES */
-.experience {
-  height: fit-content;
-  color: #f2f2f2;
-  font-size: 2rem;
-  background-color: #25242a;
-  padding: 5% 0 5% 5%;
-}
-.experience li {
-  list-style: none;
-}
-
-.experience h2 {
-  color: #00c897;
-}
-
-@media screen and (max-width: 700px) {
-  .experience h2 {
-    font-size: 1.5rem;
-  }
-
-  .experience li {
-    font-size: 1.5rem;
-  }
-}
-
-/* PROJECTS SECTION  */
-/* MY PROJECTS */
-
-#presentation {
-  width: 100%;
-  height: fit-content;
   color: white;
-}
-
-#presentation h2 {
-  font-size: 2rem;
-  color: #00c897;
-}
-
-#presentation p {
-  font-size: 1.5rem;
-}
-
-#projects {
-  background-color: #007a8b;
-  width: 100%;
-  height: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#newProject {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-}
-
-#newProject div {
-  width: 30%;
-  height: fit-content;
-  margin: 2.5%;
-  background-color: white;
-}
-
-#newProject div img {
-  width: 90%;
-  height: 10%;
-  margin: 5% 5% 5% 5%;
-}
-
-#newProject h2 {
-  margin: 0 5% 0 5%;
-}
-
-#newProject p {
-  padding: 0 5% 0 5%;
-}
-
-@media screen and (max-width: 700px) {
-  #newProject {
-    flex-direction: column;
-  }
-
-  #newProject div {
-    width: 90%;
-    margin: 5%;
-  }
-
-  #presentation h2 {
-    font-size: 1.5rem;
-    margin-left: 2%;
-  }
-
-  #presentation p {
-    margin-left: 2%;
-    margin-top: 1%;
-  }
-}
-
-/* FOOTER SECTION */
-/* CONTACT SECTION */
-footer {
-  background-color: #25242a;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  color: #f2f2f2;
-  padding: 2%;
+  justify-content: center;
 }
-
-@media screen and (max-width: 500px) {
-  footer {
-    width: 90%;
-    font-size: 1rem;
-    margin: 0;
-  }
+.contact {
+  height: 30vh;
+  background-color: #00c897;
+  color: #25242a;
+  flex-direction: column;
 }
