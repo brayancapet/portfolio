@@ -8,6 +8,7 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/*  FIRST PAGE */
 /* style pour ma page d'accueil avec une animation auto-type https://github.com/mattboldt/typed.js/ */
 .hello {
   width: 100%;
@@ -29,6 +30,7 @@
 /* élément parent de mes sections */
 .container {
   width: 100%;
+  height: fit-content;
 }
 
 /* sections contenant mes informations (presentation, competences, projets et contact) */
@@ -39,11 +41,145 @@ section {
   color: white;
   display: flex;
   align-items: center;
+}
+
+/* SECONDE PARTIE */
+/* description avec la photo de zoro à gauche */
+.presentation {
   justify-content: center;
 }
+.presentation p {
+  font-size: 35px;
+  margin: 5%;
+}
+.green-words {
+  color: #00c897;
+}
+
+/* TROISIEME PARTIE */
+/* Mes compétences, outils que je maitrise */
+.competences {
+  flex-direction: column;
+  justify-content: center;
+}
+.competences h2 {
+  margin-bottom: 2%;
+}
+.skill-list {
+  border: 3px solid #fff;
+  list-style-type: none;
+  padding: 5%;
+}
+.skill-list li {
+  margin-top: 3%;
+  font-size: 20px;
+}
+/* Juste un effet pour mon h2 de la section compétences */
+/* underline hover effect animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00c897;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* QUATRIEME SECTION */
+/* Mes projets */
+.projets,
+.projets-carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projets h2 {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.projets-carte h2 {
+  color: #00c897;
+  text-align: center;
+}
+
+.projets-carte p {
+  font-size: 20px;
+}
+
+.projets-carte i {
+  color: #00c897;
+}
+
+section div img {
+  width: 50%;
+  height: auto;
+}
+/* DERNIERE SECTION */
+/* contact section à la fin de mon site */
 .contact {
   height: 30vh;
   background-color: #00c897;
   color: #25242a;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.contact h2 {
+  margin-bottom: 1%;
+}
+.contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.contact ul li {
+  margin: 5%;
+}
+
+/* présence en double de cette animation car je dois changer la couleur qui va sous ligner */
+/* underline hover effect animation */
+.hover-underline-animation-two {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation-two:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #25242a;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-two:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ul li a i {
+  color: #25242a;
 }

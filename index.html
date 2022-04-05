@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Brayan Capet</title>
   </head>
   <body>
@@ -13,29 +17,94 @@
       <h1>Bonjour, je suis <span class="auto-type"></span></h1>
     </div>
 
+    <!-- Container pour toutes mes sections -->
     <div class="container">
+      <!-- Section présentation avec zoro à droite -->
       <section class="presentation">
-        <h2>Présentation</h2>
+        <p>
+          Je suis un développeur web passionné, curieux et avec un grand esprit
+          d'équipe. Je suis en formation au sein d'intech où je travaille au
+          quotidien sur des projets front-end et back-end. Je suis actuellement
+          investis dans l'apprentissage de la programmation orientée objet, mes
+          codes sont clean et commentés. Vous pourrez trouver mes projets sur
+          <a
+            href="https://github.com/brayancapet"
+            class="green-words"
+            target="blank"
+            >mon Github</a
+          >.
+        </p>
+        <img
+          src="./images/zoro-no-bg.png"
+          alt="Roronoa zoro"
+          class="picture-zoro"
+        />
       </section>
 
+      <!-- Section sur mes compétences -->
       <section class="competences">
-        <h2>Compétences</h2>
+        <h2 class="hover-underline-animation">
+          Lors de ma quête pour devenir développeur, j'ai eu l'opportunité de me
+          familiariser avec ces outils :
+        </h2>
+        <ul class="skill-list">
+          <li>HTML / CSS / Bootstrap</li>
+          <li>JavaScript / Angular</li>
+          <li>
+            PHP (programmation fonctionnelle et orientée objet) / Symfony /
+            MySQL / PhpMyAdmin
+          </li>
+          <li>GitHub / Gitlab / Gitbash</li>
+          <li>Gestion de projet traditionnelle et agile (SCRUM)</li>
+        </ul>
       </section>
 
+      <!-- Section avec mes projets -->
       <section class="projets">
-        <h2>Projets</h2>
+        <h2>
+          J'ai décidé de vous partager mes projets C.R.U.D (Create, Read,
+          Update, Delete) en priorité car ce sont les projets qui mettent le
+          plus en valeur mes compétences.
+        </h2>
+
+        <div class="projets-carte">
+          <img src="./images/game-card.png" alt="Game card project" />
+          <h2 class="hover-underline-animation">
+            Carte de personnage pop culture
+          </h2>
+          <p>
+            Créez des cartes de vos personnages préférés et stockez les sur
+            votre local storage. <br />
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </p>
+        </div>
       </section>
 
+      <!-- Section avec mes contacts -->
       <section class="contact">
-        <h2>Restons en contact</h2>
+        <h2 class="hover-underline-animation-two">On reste en contact ?</h2>
         <p>
           Je reste disponible pour toute information complémentaire ou pour
           toute demande de rendez-vous.
         </p>
         <ul>
-          <li>Mail</li>
-          <li>Linkedin</li>
-          <li>GitHub</li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/brayan-capet-707b4a223/"
+              target="blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/brayancapet" target="blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
         </ul>
       </section>
     </div>
