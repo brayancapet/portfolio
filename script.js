@@ -30,7 +30,7 @@ let my_projects = [
   },
   {
     image: "./images/melo.png",
-    titre: "Site vitrine pour un food truck.",
+    titre: "Site vitrine pour un food truck",
     description:
       "Site web responsif, avec la localisation du food truck, son menu, la provenance de ses produits, ainsi que des informations sur la propriétaire.<br />",
     stack: `<i class="fa-brands fa-html5"></i>
