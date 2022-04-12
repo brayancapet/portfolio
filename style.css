@@ -101,8 +101,34 @@ section {
 
 /* QUATRIEME SECTION */
 /* Mes projets */
-.projets,
+.projets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .projets-carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+#a-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous,
+.next {
+  color: #00c897;
+  margin: 0 4% 0 4%;
+  cursor: pointer;
+}
+
+.contenu-projet {
   display: flex;
   flex-direction: column;
   justify-content: center;
