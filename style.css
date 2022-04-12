@@ -101,20 +101,15 @@ section {
 
 /* QUATRIEME SECTION */
 /* Mes projets */
+.projets,
 .projets-carte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projets {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projets h3 {
+.projets h2 {
   margin-bottom: 1%;
   margin-top: 1%;
 }
@@ -131,32 +126,9 @@ section {
 .projets-carte i {
   color: #00c897;
 }
-#card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-}
-
-.previous,
-.next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 4% 0 4%;
-  color: #00c897;
-  cursor: pointer;
-}
-
-#a-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 section div img {
-  width: 70%;
+  width: 50%;
   height: auto;
 }
 /* DERNIERE SECTION */

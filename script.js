@@ -7,6 +7,7 @@ let typed = new Typed(".auto-type", {
   loop: true,
 });
 
+
 let my_projects = [
   {
     image: "./images/game-card.png",
@@ -79,3 +80,5 @@ previous.addEventListener("click", function () {
     setProject(my_projects[count]);
   }
 });
+
+
