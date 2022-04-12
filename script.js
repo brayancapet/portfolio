@@ -7,7 +7,6 @@ let typed = new Typed(".auto-type", {
   loop: true,
 });
 
-
 let my_projects = [
   {
     image: "./images/game-card.png",
@@ -52,6 +51,7 @@ var count = 0;
 
 function setProject(object) {
   img.src = object.image;
+  img.alt = object.titre;
   header_project.textContent = `${object.titre}`;
   project_paragraph.innerHTML = `${object.description} ${object.stack}`;
   picture_redirection.href = `${object.href}`;
@@ -80,5 +80,3 @@ previous.addEventListener("click", function () {
     setProject(my_projects[count]);
   }
 });
-
-
