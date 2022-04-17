@@ -1,0 +1,59 @@
+https://www.youtube.com/watch?v=vmOG9yQGGM0
+
+PORTFOLIO
+
+quels sont les attendus dans un portfolio ?
+
+- intégrer une maquette avec un design travaillé
+- savoir manipuler un api
+- faire une factory
+- crud
+-login connexion mdp oublié
+- envoi d'email et notif
+- languages et framework + seo et connaissance web
+
+projets
+
+- Réseau social (clone fb par ex)
+avec sign up , mdp oublié etc
+publier contenu (texte et multimédia)
+fil d'actualité
+like commentaire
+tout le monde a accés aux post de tout le monde
+
+- Site de rencontre
+clone tinder par ex
+creer compte zvec perso profil
+listing des profils
+recherche par rapport aux comptes
+envoyer et recevour message
+notif email ou push
+
+- Uber eats
+listing de formules et menu
+calcul tarif, frais de livraison , frais de gestion etc
+gestion de commande (mettre adresse etc)
+suivi commande (accepté, en cours de livraison)
+suivi de livreur factice avec api google map ou mapbox
+
+- boutique en ligne
+listing produit
+recherche produit
+bonus : algolia (à aller voir d'après le mec de la vidéo)
+panier
+historique de commande et facture
+creer compte
+différent moyen de paiement
+essayer stripe pour le paiement apparemment
+
+- blog
+design vraiment important pour ce projet
+catégories
+avec différents articles
+article suivant, précedent
+système de commentaire
+inscription à une newsletter
+lien de partage sur reseaux sociaux
+interface administration canon (d'après le mec encore)
+
+
