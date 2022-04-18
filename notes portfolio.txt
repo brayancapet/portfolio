@@ -57,3 +57,10 @@ lien de partage sur reseaux sociaux
 interface administration canon (d'après le mec encore)
 
 
+dans le portfolio en lui meme au niveau de la structure
+
+- page d'accueil attirante avec mon nom et ma profession
+- page de présentation qui explique qui je suis et mon parcours
+- mon stack/mes skills
+- mes projets
+- mon contact
