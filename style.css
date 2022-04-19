@@ -1,167 +1,223 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/*  FIRST PAGE */
-/* style pour ma page d'accueil avec une animation auto-type https://github.com/mattboldt/typed.js/ */
-.hello {
-  width: 100%;
-  height: 100vh;
+body {
   background-color: #25242a;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hello h1 {
-  font-size: 60px;
-  font-weight: 600;
-}
-.auto-type {
-  color: #00c897;
+  opacity: 1;
+  transition-duration: 2.5s;
+  transition-property: opacity;
 }
 
-/* élément parent de mes sections */
-.container {
-  width: 100%;
-  height: fit-content;
-}
-
-/* sections contenant mes informations (presentation, competences, projets et contact) */
+/* Toutes mes sections auront une hauteur de 100vh et une largeur de 100vw */
 section {
   height: 100vh;
-  width: 100%;
-  background-color: #25242a;
-  color: white;
-  display: flex;
-  align-items: center;
+  width: 100vw;
 }
 
-/* SECONDE PARTIE */
-/* description avec la photo de zoro à gauche */
-.presentation {
-  justify-content: center;
-}
-.presentation p {
-  font-size: 35px;
-  margin: 5%;
-}
-.green-words {
-  color: #00c897;
-}
-
-/* TROISIEME PARTIE */
-/* Mes compétences, outils que je maitrise */
-.competences {
-  flex-direction: column;
-  justify-content: center;
-}
-.competences h2 {
-  margin-bottom: 2%;
-}
-.skill-list {
-  border: 3px solid #fff;
-  list-style-type: none;
-  padding: 5%;
-}
-.skill-list li {
-  margin-top: 3%;
-  font-size: 20px;
-}
-/* Juste un effet pour mon h2 de la section compétences */
-/* underline hover effect animation */
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #00c897;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* QUATRIEME SECTION */
-/* Mes projets */
-.projets {
+/* PREMIERE SECTION */
+/* Page d'accueil */
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projets-carte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-}
-
-#a-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.previous,
-.next {
-  color: #00c897;
-  margin: 0 4% 0 4%;
-  cursor: pointer;
-}
-
-.contenu-projet {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.projets h2 {
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-
-.projets-carte h2 {
-  color: #00c897;
-  text-align: center;
-}
-
-.projets-carte p {
-  font-size: 20px;
-}
-
-.projets-carte i {
+.hero-section h2 {
+  font-size: 40px;
   color: #00c897;
 }
 
-section div img {
+.hero-section h1 {
+  font-size: 30px;
+}
+
+.hero-section p {
+  font-size: 15px;
+}
+/* /////////////////////////////// */
+
+/* PRESENTATION SECTION */
+/* Ma page de présentation */
+.presentation-section {
+  height: 100vh;
+  display: flex;
+}
+
+/* Les deux div composant ma section presentation */
+.presentation-section div {
   width: 50%;
-  height: auto;
+  width: 100%;
 }
-/* DERNIERE SECTION */
-/* contact section à la fin de mon site */
-.contact {
-  height: 30vh;
+
+/* Paragraphe qui arrive de la gauche */
+.presentation-left-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.slide-in-from-left {
+  animation: apparition 1s ease-out forwards;
+}
+
+/* Animation permettant à mon div de gauche d'apparaitre depuis la gauche */
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Effet de la droite */
+.slide-in-from-right {
+  animation: apparition-droite 1s ease-out forwards;
+}
+
+/* Animation pour que mon div de droite arrivent de la droite de mon écran */
+@keyframes apparition-droite {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.presentation-right-div {
+  opacity: 0;
+}
+
+/* image de mon div de droite */
+.presentation-section div img {
+  width: auto;
+  height: 100%;
+}
+
+/* Paragraphe de presentation */
+.presentation-paragraph {
+  font-size: 25px;
+  padding-left: 5%;
+}
+/* //////////////////////////////// */
+
+/* Section sur mes projets */
+.projets-section {
   background-color: #00c897;
+}
+
+/* Phrase au dessus de mes projets */
+.projets-header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #25242a;
+  font-size: 25px;
+}
+
+/* Le container de mes cartes */
+.card-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Mes cartes */
+.card {
+  height: 50%;
+  width: 20%;
+  background-color: #25242a;
+  border-radius: 10%;
+  opacity: 0;
+}
+
+/* Les div qui constituent mes cartes (la photo, la description et mes icones) */
+.card div {
+  width: 100%;
+}
+
+/* Le div container de mon image dans un carte */
+.card-image {
+  height: 50%;
+}
+/* Images de mes cartes */
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10% 10% 0 0;
+}
+
+/* Description de mes cartes */
+.card-description {
+  font-size: 20px;
+  color: #00c897;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2% 0 2%;
+  height: 30%;
+}
+
+/* Mes logo pour montrer mon stack */
+.card-stack {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20%;
+}
+.card-stack i {
+  font-size: 40px;
+}
+
+.card-stack i:hover {
+  color: #00c897;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animation pour faire apparaitre mes projets */
+.projets-animation {
+  animation: appear-from-top 1s ease-out forwards;
+}
+
+@keyframes appear-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* /////////////////////////////////// */
+
+.skills-section {
+}
+
+/* /////////////////////////////////////// */
+/* Contact section en bas de mon site */
+.contact-section {
+  background-color: #00c897;
+  height: 30vh;
   color: #25242a;
   flex-direction: column;
   display: flex;
@@ -169,19 +225,19 @@ section div img {
   align-items: center;
   font-size: 25px;
 }
-.contact h2 {
+
+.contact-section h2 {
   margin-bottom: 1%;
 }
-.contact ul {
+.contact-section ul {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
-.contact ul li {
+.contact-section ul li {
   margin: 5%;
 }
 
-/* présence en double de cette animation car je dois changer la couleur qui va sous ligner */
 /* underline hover effect animation */
 .hover-underline-animation-two {
   display: inline-block;
@@ -208,4 +264,68 @@ section div img {
 
 ul li a i {
   color: #25242a;
+}
+
+.skills-section {
+  display: flex;
+}
+
+.skill {
+  width: 33.3%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-effect-left {
+  animation: skill-animation-left 1.5s ease-in-out forwards;
+}
+
+@keyframes skill-animation-left {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.skill-effect-right {
+  animation: skill-animation-right 1.5s ease-in-out forwards;
+}
+
+@keyframes skill-animation-right {
+  from {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.skill-effect-center {
+  animation: skill-animation-center 1.5s ease-in-out forwards;
+}
+
+@keyframes skill-animation-center {
+  from {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

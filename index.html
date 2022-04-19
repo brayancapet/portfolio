@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Brayan Capet</title>
   </head>
   <body>
     <!-- Première page avec mon effet auto-type -->
-    <div class="hello">
-      <h1>Bonjour, je suis <span class="auto-type"></span></h1>
-    </div>
+    <section class="hero-section">
+      <h1>Brayan Capet</h1>
+      <h2>Développeur full-stack junior</h2>
+      <p>En recherche de stage pour le poste de développeur web</p>
+    </section>
 
-    <!-- Container pour toutes mes sections -->
-    <div class="container">
-      <!-- Section présentation avec zoro à droite -->
-      <section class="presentation">
-        <p>
+    <section class="presentation-section">
+      <div class="presentation-left-div">
+        <p class="presentation-paragraph">
           Je suis un développeur web passionné, curieux et avec un grand esprit
           d'équipe. Je suis en formation au sein d'intech où je travaille au
           quotidien sur des projets front-end et back-end. Je suis actuellement
@@ -34,95 +34,125 @@
             >mon Github</a
           >.
         </p>
+      </div>
+
+      <div class="presentation-right-div">
         <img
           src="./images/zoro-no-bg.png"
           alt="Roronoa zoro"
           class="picture-zoro"
         />
-      </section>
+      </div>
+    </section>
 
-      <!-- Section sur mes compétences -->
-      <section class="competences">
-        <h2 class="hover-underline-animation">
-          Lors de ma quête pour devenir développeur, j'ai eu l'opportunité de me
-          familiariser avec ces outils :
+    <section class="projets-section">
+      <div class="projets-header">
+        <h2 class="hover-underline-animation-two">
+          Jetez un oeil à mes projets
         </h2>
-        <ul class="skill-list">
-          <li>HTML / CSS / Bootstrap</li>
-          <li>JavaScript / Angular</li>
-          <li>
-            PHP (programmation fonctionnelle et orientée objet) / Symfony /
-            MySQL / PhpMyAdmin
-          </li>
-          <li>GitHub / Gitlab / Gitbash</li>
-          <li>Gestion de projet traditionnelle et agile (SCRUM)</li>
-        </ul>
-      </section>
+      </div>
 
-      <!-- Section avec mes projets -->
-      <section class="projets">
-        <h2>
-          J'ai décidé de vous partager mes projets C.R.U.D (Create, Read,
-          Update, Delete) en priorité car ce sont les projets qui mettent le
-          plus en valeur mes compétences.
-        </h2>
-
-        <div class="projets-carte">
-          <div class="previous">
-            <p>PREVIOUS</p>
-          </div>
-          <div class="contenu-projet">
-            <a href="" id="a-pic" target="blank"
-              ><img
-                src="./images/game-card.png"
-                alt="Game card project"
-                class="image-projet"
+      <!-- Container de mes cartes projets -->
+      <div class="card-container">
+        <div class="card game-card">
+          <div class="card-image">
+            <a href="./projects/game_card/index.html" target="blank"
+              ><img src="./images/game-card.png" alt="game card"
             /></a>
-            <h2 class="hover-underline-animation project-header">
-              Carte de personnage pop culture
-            </h2>
-            <p class="project-paragraph">
-              Créez des cartes de vos personnages préférés et stockez les sur
-              votre local storage. <br />
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="card-description">
+            <p>
+              Créez des cartes de vos personnages préférés, modifiez les,
+              supprimmez les.
             </p>
           </div>
-          <div class="next">
-            <p>NEXT</p>
+          <div class="card-stack">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
           </div>
         </div>
-      </section>
+        <div class="card melo">
+          <div class="card-image">
+            <a href="./projects/site Mélo/index.html" target="blank"
+              ><img src="./images/melo.png" alt="site vitrine"
+            /></a>
+          </div>
+          <div class="card-description">
+            <p>
+              Site vitrine pour un food truck, avec les informations utiles pour
+              contacter et voir le menu.
+            </p>
+          </div>
+          <div class="card-stack">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+          </div>
+        </div>
+        <div class="card social-network">
+          <div class="card-image">
+            <a href="./projects/social_network/index.html" target="blank"
+              ><img src="./images/social_network.png" alt="mon réseau social"
+            /></a>
+          </div>
+          <div class="card-description">
+            <p>Mon premier réseau social en localhost, projet C.R.U.D.</p>
+          </div>
+          <div class="card-stack">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Section avec mes contacts -->
-      <section class="contact">
-        <h2 class="hover-underline-animation-two">On reste en contact ?</h2>
-        <p>
-          Je reste disponible pour toute information complémentaire ou pour
-          toute demande de rendez-vous.
-        </p>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/brayan-capet-707b4a223/"
-              target="blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/brayancapet" target="blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <section class="skills-section">
+      <div class="skill skill-left">
+        <img
+          src="./images/undraw_Mobile_interface_re_1vv9-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="skill skill-center">
+        <h2>Les langages que j'utilise</h2>
+        <img src="./images/stack.png" alt="" />
+      </div>
+      <div class="skill skill-right">
+        <img
+          src="./images/undraw_Dev_productivity_re_fylf-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <section class="contact-section skill-right">
+      <h2 class="hover-underline-animation-two">On reste en contact ?</h2>
+      <p>
+        Je reste disponible pour toute information complémentaire ou pour toute
+        demande de rendez-vous.
+      </p>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/brayan-capet-707b4a223/"
+            target="blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/brayancapet" target="blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
     <script src="./script.js"></script>
   </body>
 </html>
