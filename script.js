@@ -10,29 +10,70 @@
 const presentation_right = document.querySelector(".presentation-right-div");
 const presentation_left = document.querySelector(".presentation-left-div");
 const projets_card = document.querySelectorAll(".card");
-const skill_left = document.querySelector(".skill-left");
 const skill_center = document.querySelector(".skill-center");
-const skill_right = document.querySelector(".skill-right");
+const skill_side = document.querySelectorAll(".skill-side");
+const projets_header = document.querySelector(".projets-header");
 
-window.addEventListener("scroll", () => {
-  let scrollPos = window.scrollY;
-  console.log(scrollPos);
-  if (scrollPos >= 580 && scrollPos <= 600) {
-    presentation_right.classList.add("slide-in-from-right");
-    presentation_left.classList.add("slide-in-from-left");
+const firstObserver = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(
+        "slide-in-from-right",
+        entry.isIntersecting
+      );
+    }),
+  {
+    treshold: 1,
   }
+);
+firstObserver.observe(presentation_right);
 
-  if (scrollPos >= 1000 && scrollPos <= 1020) {
-    for (let i = 0; i < projets_card.length; i++) {
-      projets_card[i].classList.add("projets-animation");
-    }
+const secondObserver = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("slide-in-from-left", entry.isIntersecting);
+    }),
+  {
+    treshold: 1,
   }
+);
+secondObserver.observe(presentation_left);
 
-  if (scrollPos >= 1850 && scrollPos <= 1870) {
-    skill_left.classList.add("skill-effect-left");
-    skill_center.classList.add("skill-effect-center");
-    skill_right.classList.add("skill-effect-right");
+const thirdObserver = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("appear-from-top", entry.isIntersecting);
+    }),
+  {
+    treshold: 1,
   }
+);
+projets_card.forEach((card) => {
+  thirdObserver.observe(card);
+});
+thirdObserver.observe(projets_header);
+
+const fourthObserver = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("left-effect", entry.isIntersecting);
+    }),
+  {
+    treshold: 1,
+  }
+);
+skill_side.forEach((skill) => {
+  console.log(skill);
+  fourthObserver.observe(skill);
 });
 
-console.log(projets_card);
+const fifthObserver = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("up-effect", entry.isIntersecting);
+    }),
+  {
+    treshold: 1,
+  }
+);
+fifthObserver.observe(skill_center);
